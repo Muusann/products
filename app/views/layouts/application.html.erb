@@ -10,6 +10,15 @@
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">端末管理</div>
+      <ul class="page-list">
+        <li><%= link_to "トップ", "/" %></li>
+        <li><%= link_to "新規登録", "/users/new" %></li>
+        <li><%= link_to "詳細", "/users/:id" %></li>
+        <li><%= link_to "編集", "/users/:id/edit" %></li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>
